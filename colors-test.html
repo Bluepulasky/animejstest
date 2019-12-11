@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>anime.js test</title>
+  <script src="assets/anime.min.js"></script>
+</head>
+
+<body>
+  <style>
+    .css-selector-demo {
+      color: blue;
+    }
+  </style>
+
+  <div class="css-selector-demo">Hello world</div>
+
+  <script>
+    anime({
+      targets: '.css-selector-demo',
+      translateX: 250,
+      duration: 250,
+      delay: 1000,
+      loop: false,
+    });
+  </script>
+</body>
+
+</html>
